@@ -1,7 +1,7 @@
 <footer class="container-fluid bg-secondary text-light shadow">
 		<div class="container" style="overflow:hidden;">
-			<div class="row">
-				<div class="col-12 col-md-4 p-5 text-center">
+			<div class="row mt-3">
+				<div class="col-12 col-md-4 p-3 text-center">
 				
 
 					<i class="fas fa-phone-alt"></i> 55 5555 5555<br>
@@ -17,31 +17,36 @@
 				</div>
 
 
-				<div class="col-12 col-md-4 p-5 text-center">
+				<div class="col-12 col-md-4 p-3 text-center">
 					<img src="./assets/img/logofooter.png" alt="" class="mb-3" height="150px;">
 				</div>
 
 	
 	
-				<div class="col-12 col-md-4 p-5 text-center">
-					<h4>Fábrica de Software</h4>
+				<div class="col-12 col-md-4 p-3 text-center">
+					<h4>Siguenos en nuestras redes</h4>
 	
-					<ul>
-						<li>Desarrollo Web</li>
-						<li>Aplicaciones móviles</li>
-					</ul>
-
-
-
 					<div class="d-block text-center redes">
 						<span class="d-inline-block p-2">
-							<a href="#"><i class="fab fa-linkedin"></i></a>
+							<a href="#"><i class="fab fa-twitter" style="font-size: 32px;"></i></a>
 						</span>
+						
 						<span class="d-inline-block p-2">
-							<a href="#"><i class="fab fa-youtube"></i></a>
+							<a href="#"><i class="fab fa-facebook" style="font-size: 32px;"></i></a>
+						</span>
+						
+						<span class="d-inline-block p-2">
+							<a href="#"><i class="fab fa-youtube" style="font-size: 32px;"></i></a>
+						</span>
+						
+						<span class="d-inline-block p-2">
+							<a href="#"><i class="fab fa-tiktok" style="font-size: 32px;"></i></a>
+						</span>
+						
+						<span class="d-inline-block p-2">
+							<a href="#"><i class="fab fa-instagram" style="font-size: 32px;"></i></a>
 						</span>
 					</div>
-	
 				</div>
 	
 				
@@ -50,16 +55,10 @@
 
 		<hr class="mb-0 pb-0">
 
-		<div class="container" style="overflow:hidden;">
+		<div class="container">
 			<div class="row">
 				<div class="col text-center p-3">
-				</div>
-
-				<div class="col text-center p-3">
 					Política de Privacidad
-				</div>
-
-				<div class="col text-center p-3">
 				</div>
 			</div>
 		</div>

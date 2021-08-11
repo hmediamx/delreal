@@ -23,9 +23,9 @@
 
 
 
-    <div class="container-fluid bg-primary p-5">
+    <div class="container-fluid bg-primary p-5" style="background: url(./assets/img/fondos/fondo-pasteleria-2.jpg) 50% center no-repeat; background-size: cover;">
         <div class="container p-5">
-            <h2 class="text-light" data-aos="fade-left" data-aos-duration="2000">Productos</h2>
+            <h1 class="text-center display-4" style="color: #ff9;" data-aos="fade-left" data-aos-duration="2000">¿Estás de antojo?</h1>
         </div>
     </div>
 
