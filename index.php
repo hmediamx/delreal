@@ -97,7 +97,7 @@
 			</div>
 			<div class="col-12 p-3">
 				<a href="./sucursales.php">
-					<img src="./assets/img/mapa.png" alt="">
+					<img src="./assets/img/mapa.png" alt="" width="100%">
 				</a>
 			</div>
 		</div>
