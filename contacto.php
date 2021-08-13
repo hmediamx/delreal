@@ -33,50 +33,54 @@
 
 
 			<div class="col-md-6 p-3">
-				<form id="mailFormulario" method="POST" enctype="application/x-www-form-urlencoded">
-					<input id="destinatario" name="destinatario" type="hidden" value="alberto@gobierno.io">
-
-					<div class="row">
-						<div class="col-12 col-md pb-2 pr-md-1">
-							<input id="inputNombre" name="nombre" type="text" class="form-control rounded-0 border-0"
-								placeholder="Nombre">
-						</div>
-						<div class="col-12 col-md pb-2 pl-md-1">
-							<input id="inputCorreo" name="correo" type="text" class="form-control rounded-0 border-0"
-								placeholder="Correo electrónico">
-						</div>
+				<div class="card bg-secondary shadow">
+					<div class="card-body">
+						<form id="mailFormulario" method="POST" enctype="application/x-www-form-urlencoded">
+							<input id="destinatario" name="destinatario" type="hidden" value="alberto@gobierno.io">
+		
+							<div class="row">
+								<div class="col-12 col-md pb-2 pr-md-1">
+									<input id="inputNombre" name="nombre" type="text" class="form-control rounded-0 border-0"
+										placeholder="Nombre">
+								</div>
+								<div class="col-12 col-md pb-2 pl-md-1">
+									<input id="inputCorreo" name="correo" type="text" class="form-control rounded-0 border-0"
+										placeholder="Correo electrónico">
+								</div>
+							</div>
+		
+							<div class="row">
+								<div class="col pb-2">
+									<input id="inputAsunto" name="asunto" type="text" class="form-control rounded-0 border-0"
+										placeholder="Asunto">
+								</div>
+							</div>
+		
+							<div class="row">
+								<div class="col pb-2">
+									<textarea id="inputMensaje" class="form-control rounded-0 border-0" name="mensaje" cols="30"
+										rows="10">
+		
+		
+		</textarea>
+								</div>
+							</div>
+		
+		
+							<div id="mailAlert" class="alert alert-success d-none">
+								<span id="mailCargando">Enviando, espere un momento ...</span>
+							</div>
+		
+		
+							<div class="row">
+								<div class="col pb-2">
+									<input id="mailEnviar" type="submit" class="btn btn-primary w-100 p-2"
+										value="Enviar mensaje">
+								</div>
+							</div>
+						</form>
 					</div>
-
-					<div class="row">
-						<div class="col pb-2">
-							<input id="inputAsunto" name="asunto" type="text" class="form-control rounded-0 border-0"
-								placeholder="Asunto">
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col pb-2">
-							<textarea id="inputMensaje" class="form-control rounded-0 border-0" name="mensaje" cols="30"
-								rows="10">
-
-
-</textarea>
-						</div>
-					</div>
-
-
-					<div id="mailAlert" class="alert alert-success">
-						<span id="mailCargando">Enviando, espere un momento ...</span>
-					</div>
-
-
-					<div class="row">
-						<div class="col pb-2">
-							<input id="mailEnviar" type="submit" class="btn btn-primary w-100 p-2"
-								value="Enviar mensaje">
-						</div>
-					</div>
-				</form>
+				</div>
 			</div>
 		</div>
 

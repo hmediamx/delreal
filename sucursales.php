@@ -158,105 +158,305 @@
 			new google.maps.Point(28,44)
 		);
 
-		new google.maps.Marker({
+
+		const ceciliaWindow = new google.maps.InfoWindow({
+			content: "Calle Cecilia No. 100 Esquina Av. Chimalhuacán, <br>Colonia Benito Juárez. Municipio Chimalhuacán Estado de México. C. P.",
+		});
+
+		const madrugadaWindow = new google.maps.InfoWindow({
+			content: "Av. Madrugada No. 203 Esquina con Adelita, Colonia Benito Juárez Municipio Nezahualcóyotl Estado de México C. P. 57000.",
+		});
+
+		const palacioWindow = new google.maps.InfoWindow({
+			content: "Av. Chimalhuacán No. 311 – C Col. Benito Juárez, Municipio Nezahualcóyotl Estado de México C. P. 57000.",
+		});
+
+		const sanLorenzoWindow = new google.maps.InfoWindow({
+			content: "Av. Central No. 6 Colonia San Lorenzo Ampliación, Municipio Chimalhuacán. Estado de México C. P. 56340.",
+		});
+
+		const mexicoWindow = new google.maps.InfoWindow({
+			content: "Av. México no. 175 Col. Raúl romero municipio Nezahualcóyotl estado de México C. P. 57630.",
+		});
+
+		const chimalhuacanWindow = new google.maps.InfoWindow({
+			content: "Av. Morelos No. 2 Local “D” Colonia Cabecera Municipal de Chimalhuacán Municipio de Chimalhuacán Estado de México C. P. 56330.",
+		});
+
+		const reformaWindow = new google.maps.InfoWindow({
+			content: "Oriente 9 No. 165 esquina Av. Loma Bonita Colonia Reforma Municipio Nezahualcóyotl C. P. 57840.",
+		});
+
+		const ixtapalucaWindow = new google.maps.InfoWindow({
+			content: "Av. Jacarandas no. 22 colonia valle verde Ixtapaluca entre Tule y Eucalipto Estado de México.",
+		});
+
+		const independenciaWindow = new google.maps.InfoWindow({
+			content: "Av. Sur 3 casi esquina con Oriente 1 Col. Reforma Municipio Nezahualcóyotl Estado de México.",
+		});
+
+		const flamingosWindow = new google.maps.InfoWindow({
+			content: "Calle Villa Obregón Col. Metropolitana 3ra. Sección Municipio Nezahualcóyotl Estado de México C. P. 57750.",
+		});
+
+		const sanFelipeWindow = new google.maps.InfoWindow({
+			content: "Puerto Papantla No. 62 Esquina Puerto Tampico Casas Alemán Delegación Gustavo A. Madero, México D. F.",
+		});
+
+
+		const torresWindow = new google.maps.InfoWindow({
+			content: "Av. De las Torres Esquina con Yacatli Mz. 55 Lt. 10 Barrio Vidrieros municipio Chimalhuacán Estado de México.",
+		});
+
+		const texcocoWindow = new google.maps.InfoWindow({
+			content: "Av. Carmelo Pérez no. 58 casi esquina con Av. Texcoco municipio Nezahualcóyotl Estado de México C. P. 57710.",
+		});
+
+		const chimalhuacan2Window = new google.maps.InfoWindow({
+			content: "Plutarco Gonzales Pliego esq. Av. del Peñón, Barrio Talabarteros",
+		});
+		
+
+		var cecilia = new google.maps.Marker({
 			position: { lat: 19.39814216, lng: -98.99925088 },
 			map: map,
 			icon: iconoPasteleria,
-			title:"Cecilia"
+			title:"Sucursal Cecilia"
+		});
+		cecilia.addListener("click", () => {
+			ceciliaWindow.open({
+				anchor: cecilia,
+				map,
+				shouldFocus: false,
+			});
+			console.log("Click");
+			map.setZoom(14);
+			map.setCenter(cecilia.getPosition());
+
 		});
 
-
-		
-		new google.maps.Marker({
+	
+		var madrugada = new google.maps.Marker({
 			position: { lat: 19.4070053, lng: -98.9969146 },
 			map: map,
 			icon: iconoPasteleria,
-			title:"Sucursal Pastelería"
+			title:"Sucursal Madrugada"
+		});
+		madrugada.addListener("click", () => {
+			madrugadaWindow.open({
+				anchor: madrugada,
+				map,
+				shouldFocus: false,
+			});
+			console.log("Click");
+			map.setZoom(14);
+			map.setCenter(madrugada.getPosition());
+
 		});
 
-		new google.maps.Marker({
+
+		var sanLorenzo = new google.maps.Marker({
 			position: {lat: 19.40413573, lng: -98.97549915 },
 			map: map,
 			icon: iconoPasteleria,
-			title:"Sucursal Pastelería"
+			title:"Sucursal San Lorenzo"
+		});
+		sanLorenzo.addListener("click", () => {
+			sanLorenzoWindow.open({
+				anchor: sanLorenzo,
+				map,
+				shouldFocus: false,
+			});
+			map.setZoom(14);
+			map.setCenter(sanLorenzo.getPosition());
+
 		});
 
-		new google.maps.Marker({
-			position: {lat: 19.42107101, lng: -98.97334099 },
-			map: map,
-			icon: iconoPasteleria,
-			title:"Sucursal Pastelería"
-		});
 
-		new google.maps.Marker({
+		var palacio = new google.maps.Marker({
 			position: {lat: 19.4078404, lng: -99.01958388 },
 			map: map,
 			icon: iconoPasteleria,
-			title:"Sucursal Pastelería"
+			title:"Sucursal Palacio"
+		});
+		palacio.addListener("click", () => {
+			palacioWindow.open({
+				anchor: palacio,
+				map,
+				shouldFocus: false,
+			});
+			map.setZoom(14);
+			map.setCenter(palacio.getPosition());
+
 		});
 
-		new google.maps.Marker({
-			position: {lat: 19.40118615, lng: -99.04040294},
-			map: map,
-			icon: iconoPasteleria,
-			title:"Sucursal Pastelería"
-		});
 
-		new google.maps.Marker({
-			position: {lat: 19.41854029, lng: -98.94606804},
-			map: map,
-			icon: iconoPasteleria,
-			title:"Sucursal Pastelería"
-		});
-
-		new google.maps.Marker({
+		var reforma = new google.maps.Marker({
 			position: {lat: 19.3714511,lng: -98.9823743 },
 			map: map,
 			icon: iconoPasteleria,
-			title:"Sucursal Pastelería"
+			title:"Sucursal Reforma"
+		});
+		reforma.addListener("click", () => {
+			reformaWindow.open({
+				anchor: reforma,
+				map,
+				shouldFocus: false,
+			});
+			map.setZoom(14);
+			map.setCenter(reforma.getPosition());
+
 		});
 
-		new google.maps.Marker({
+		
+		var mexico = new google.maps.Marker({
+			position: {lat: 19.40118615, lng: -99.04040294},
+			map: map,
+			icon: iconoPasteleria,
+			title:"Sucursal México"
+		});
+		mexico.addListener("click", () => {
+			mexicoWindow.open({
+				anchor: mexico,
+				map,
+				shouldFocus: false,
+			});
+			map.setZoom(14);
+			map.setCenter(mexico.getPosition());
+
+		});
+
+
+		var chimalhuacan = new google.maps.Marker({
+			position: {lat: 19.41854029, lng: -98.94606804},
+			map: map,
+			icon: iconoPasteleria,
+			title:"Sucursal Chimalhuacán"
+		});
+		chimalhuacan.addListener("click", () => {
+			chimalhuacanWindow.open({
+				anchor: chimalhuacan,
+				map,
+				shouldFocus: false,
+			});
+			map.setZoom(14);
+			map.setCenter(chimalhuacan.getPosition());
+
+		});
+
+
+		var ixtapaluca = new google.maps.Marker({
 			position: {lat: 19.3104505, lng: -98.91395461},
 			map: map,
 			icon: iconoPasteleria,
-			title:"Sucursal Pastelería"
+			title:"Sucursal Ixtapaluca"
+		});
+		ixtapaluca.addListener("click", () => {
+			ixtapalucaWindow.open({
+				anchor: ixtapaluca,
+				map,
+				shouldFocus: false,
+			});
+			map.setZoom(14);
+			map.setCenter(ixtapaluca.getPosition());
+
 		});
 
-		new google.maps.Marker({
-			position: {lat: 19.43509053, lng: -98.97467554},
-			map: map,
-			icon: iconoPasteleria,
-			title:"Sucursal Pastelería"
-		});
-
-		new google.maps.Marker({
-			position: {lat: 19.37782047, lng: -99.00894344},
-			map: map,
-			icon: iconoPasteleria,
-			title:"Sucursal Pastelería"
-		});
-
-		new google.maps.Marker({
-			position: {lat: 19.37179523, lng: -98.98660392},
-			map: map,
-			icon: iconoPasteleria,
-			title:"Sucursal Pastelería"
-		});
-
-		new google.maps.Marker({
+		var sanFelipe = new google.maps.Marker({
 			position: {lat: 19.47634105, lng: -99.08252209},
 			map: map,
 			icon: iconoPasteleria,
-			title:"Sucursal Pastelería"
+			title:"Sucursal San Felipe"
+		});
+		sanFelipe.addListener("click", () => {
+			sanFelipeWindow.open({
+				anchor: sanFelipe,
+				map,
+				shouldFocus: false,
+			});
+			map.setZoom(14);
+			map.setCenter(sanFelipe.getPosition());
+
 		});
 
-		new google.maps.Marker({
-			position: {lat: 19.38877306, lng: -99.01521564},
+
+		var texcoco = new google.maps.Marker({
+			position: {lat: 19.37782047, lng: -99.00894344},
 			map: map,
 			icon: iconoPasteleria,
-			title:"Sucursal Pastelería"
+			title:"Sucursal Texcoco"
 		});
+		texcoco.addListener("click", () => {
+			texcocoWindow.open({
+				anchor: texcoco,
+				map,
+				shouldFocus: false,
+			});
+			map.setZoom(14);
+			map.setCenter(texcoco.getPosition());
+
+		});
+
+		var independencia = new google.maps.Marker({
+			position: {lat: 19.37179523, lng: -98.98660392},
+			map: map,
+			icon: iconoPasteleria,
+			title:"Sucursal Independencia"
+		});
+		independencia.addListener("click", () => {
+			independenciaWindow.open({
+				anchor: independencia,
+				map,
+				shouldFocus: false,
+			});
+			map.setZoom(14);
+			map.setCenter(independencia.getPosition());
+
+		});	
+
+		var torres = new google.maps.Marker({
+			position: {lat: 19.43509053, lng: -98.97467554},
+			map: map,
+			icon: iconoPasteleria,
+			title:"Sucursal Torres"
+		});
+		torres.addListener("click", () => {
+			torresWindow.open({
+				anchor: torres,
+				map,
+				shouldFocus: false,
+			});
+			map.setZoom(14);
+			map.setCenter(torres.getPosition());
+		});
+
+		
+
+		
+		var chimalhuacan2 = new google.maps.Marker({
+			position: {lat: 19.42107101, lng: -98.97334099 },
+			map: map,
+			icon: iconoPasteleria,
+			title:"Sucursal Chimalhuacan 2"
+		});
+		chimalhuacan2.addListener("click", () => {
+			chimalhuacan2Window.open({
+				anchor: chimalhuacan2,
+				map,
+				shouldFocus: false,
+			});
+			map.setZoom(14);
+			map.setCenter(chimalhuacan2.getPosition());
+
+		});
+		
+
+		// var madrugada = new google.maps.Marker({
+		// 	position: {lat: 19.38877306, lng: -99.01521564},
+		// 	map: map,
+		// 	icon: iconoPasteleria,
+		// 	title:"Sucursal Pastelería"
+		// });
 
 	}
 </script>

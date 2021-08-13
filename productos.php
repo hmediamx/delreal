@@ -21,6 +21,8 @@
 
 
 
+    
+
 
 
     <div class="container-fluid bg-primary p-5" style="background: url(./assets/img/fondos/fondo-pasteleria-2.jpg) 50% center no-repeat; background-size: cover;">
@@ -40,7 +42,7 @@
 
                 <div class="card">
                     <div class="card-body shadow">
-                        <h3>Flanes</h3>
+                        <h2 class="m-0 p-0 text-primary text-center">Flanes</h2>
                         <p>Postre elaborado con una preparación a base de yemas de huevo, azúcar y leche, a veces aromatizada con vainilla, que se cuece y cuaja al baño María dentro de un molde rectangular o circular; tiene una consistencia blanda y temblorosa y un sabor estupendo.</p>
                         <p>En pasteles Finos Del Real, elaboramos los flanes más exquisitos en diversos tamaños y sabores para compartir con toda la familia.</p>
                     </div>
@@ -50,9 +52,41 @@
         </div>
 
 
+
+
+        <div class="row mt-3 mb-3 mt-md-5">
+            <div class="col-12">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 text-center m-0 p-0">
+                                <h2 class="m-0 p-0 text-primary">Panadería</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-4 p-3">
+                                <img src="./assets/img/productos/pan/pan-1.jpg" alt="" class="w-100">
+                            </div>
+
+                            <div class="col-12 col-md-4 p-3">
+                                <img src="./assets/img/productos/pan/pan-2.jpg" alt="" class="w-100">
+                            </div>
+
+                            <div class="col-12 col-md-4 p-3">
+                                <img src="./assets/img/productos/pan/pan-3.jpg" alt="" class="w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
         <div class="row mt-5">
             <div class="col-12 p-3 text-center">
-                <h2>¿Estás de antojo?</h2>
+                <h2 class="m-0 p-0 text-primary text-center">¿Estás de antojo?</h2>
             </div>
         </div>
 
@@ -94,9 +128,13 @@
 
                 <div class="card">
                     <div class="card-body shadow">
-                        <h3>Gelatinas</h3>
+                        <h2 class="m-0 p-0 text-primary text-center">Gelatinas</h2>
                         <p>Contamos con una gran variedad de gelatinas, de diferentes sabores y múltiples diseños, agradables para cualquier gusto y cualquier tipo de evento.</p>
                         <p>Visitanos en nuestras sucursales y comprueba la calidad y el exquisito sabor de nuestras gelatinas. </p>
+
+                        <div class="d-block text-center p-3">
+                            <img src="./assets//img/productos/gelatinas/gela3.png" alt="" width="w-100">
+                        </div>
                     </div>
                 </div>
 
